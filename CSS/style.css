@@ -1,0 +1,491 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+ background-image: url("https://www.transparenttextures.com/patterns/white-wall-3.png");
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #06D000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  padding: 0.5rem;
+}
+
+.nav-links li:hover .dropdown {
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid #06D000;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+  min-width: 160px;
+  padding: 0.3rem 0;
+}
+
+.dropdown a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #06D000;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dropdown a:hover {
+  background-color: #06D000;
+  color: #ffffff;
+}
+
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: #06D000;
+  margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: transparent;
+  color: #333;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  background-color: #06D000;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #04a600;
+}
+
+  /*HERO SECTION*/
+  /* Hero Section */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background-color: transparent;
+  color: #333;
+}
+
+.hero h1 {
+  font-size: 9rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.hero .web {
+  font-family: 'Montserrat', sans-serif;
+  color: #06D000;
+}
+
+.hero .lin {
+  font-family: 'DM Sans', sans-serif;
+  font-style: italic;
+  color: #06D000;
+}
+
+.hero-subtext {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.cta-outline {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  border: 2px solid #06D000;
+  border-radius: 30px;
+  color: #06D000;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-outline i {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.cta-outline:hover {
+  background-color: #06D000;
+  color: #fff;
+}
+
+.cta-outline:hover i {
+  transform: translateX(5px);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.fade-in-delay-1 {
+  animation-delay: 0.3s;
+}
+
+.fade-in-delay-2 {
+  animation-delay: 0.6s;
+}
+
+.fade-in-delay-3 {
+  animation-delay: 0.9s;
+}
+
+/* Services Section */
+.services {
+  background-color: #fff;
+  padding: 5rem 2rem;
+  position: relative;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #06D000;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.services-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.vertical-line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #06D000;
+  opacity: 0.3;
+}
+
+.service-card {
+  background: #f5f7f8;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  position: relative;
+  z-index: 1;
+}
+
+.service-card h3 {
+  color: #06D000;
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.service-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Pricing Section */
+.pricing {
+  background: #ffffff;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.pricing-subtitle {
+  font-weight: 600;
+  color: #06D000;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-note {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  color: #444;
+  font-size: 1rem;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.price-card {
+  background: #f5f7f8;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-5px);
+}
+
+.price-card h3 {
+  color: #06D000;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.price-card .price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.price-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.price-card ul li {
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.outline-button {
+  border: 2px solid #06D000;
+  background: transparent;
+  color: #06D000;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.outline-button:hover {
+  background: #06D000;
+  color: #fff;
+}
+
+/* Popular Badge */
+.popular {
+  border: 2px solid #06D000;
+}
+
+.popular .badge {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background: #06D000;
+  color: #fff;
+  padding: 0.4rem 0.7rem;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  background: #f5f7f8;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 4rem;
+}
+
+.footer .social-icons {
+  margin-bottom: 1rem;
+}
+
+.footer .social-icons a {
+  color: #06D000;
+  margin: 0 0.7rem;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #000;
+}
+
+/* Contact Section */
+.contact-section {
+  background: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contact-section .section-title {
+  font-size: 2rem;
+  color: #06D000;
+  margin-bottom: 1rem;
+}
+
+.contact-section .section-intro {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: #555;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.social-btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.social-btn.whatsapp { background: #25D366; }
+.social-btn.instagram { background: #E1306C; }
+.social-btn.facebook { background: #3b5998; }
+
+.social-btn:hover {
+  opacity: 0.9;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form h3 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  display: inline-block;
+  font-weight: 600;
+}

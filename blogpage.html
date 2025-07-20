@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weblin.blog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --weblin-green: #06D000;
+    }
+
+    .text-weblin {
+      color: var(--weblin-green);
+    }
+
+    .bg-weblin {
+      background-color: var(--weblin-green);
+    }
+
+    .hover\:text-weblin:hover {
+      color: var(--weblin-green);
+    }
+
+    .hover\:bg-weblin:hover {
+      background-color: var(--weblin-green);
+    }
+
+    .border-weblin {
+      border-color: var(--weblin-green);
+    }
+  </style>
+</head>
+<body class="font-sans bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full bg-white shadow z-50">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-xl font-bold text-weblin">Weblin.<em>Blog</em></h1>
+      <ul class="flex space-x-6">
+        <li><a href="#topics" class="hover:text-weblin transition">Topics</a></li>
+        <li><a href="#news" class="hover:text-weblin transition">News</a></li>
+        <li><a href="#posts" class="hover:text-weblin transition">Posts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="h-screen flex items-center justify-center bg-gradient-to-br from-green-100 to-white pt-24">
+    <div class="text-center px-4" data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 animate-bounce text-weblin">Welcome to Weblin Blog</h2>
+      <p class="text-lg md:text-xl text-gray-700">Inspiration, News, Tips, and Stories in one place.</p>
+    </div>
+  </section>
+
+  <!-- Topics Section -->
+  <section id="topics" class="py-20 px-6 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-3xl font-bold text-weblin mb-6" data-aos="fade-right">Explore Topics</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 bg-green-50 rounded-2xl shadow hover:shadow-lg transition" data-aos="zoom-in">
+          <h4 class="text-xl font-semibold mb-2">Tech</h4>
+          <p>Latest trends in development, AI, and gadgets.</p>
+        </div>
+        <div class="p-6 bg-green-50 rounded-2xl shadow hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="100">
+          <h4 class="text-xl font-semibold mb-2">Inspiration</h4>
+          <p>Stories that touch the soul and spark ideas.</p>
+        </div>
+        <div class="p-6 bg-green-50 rounded-2xl shadow hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="200">
+          <h4 class="text-xl font-semibold mb-2">Faith & Lifestyle</h4>
+          <p>Spiritual growth, wellness, and beauty tips.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section id="news" class="py-20 px-6 bg-gray-50">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-3xl font-bold text-weblin mb-6" data-aos="fade-left">Latest News</h3>
+      <ul class="space-y-4">
+        <li class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up">
+          <strong>Weblin Launches New Platform</strong> – July 2025
+        </li>
+        <li class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
+          <strong>Tips for Managing Your Online Business</strong> – July 2025
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Posts Section -->
+  <section id="posts" class="py-20 px-6 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-3xl font-bold text-weblin mb-6" data-aos="fade-right">Featured Posts</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-6 border rounded-xl hover:shadow-md transition" data-aos="fade-up">
+          <h4 class="text-xl font-semibold mb-2">How to Stay Consistent in Your Faith</h4>
+          <p class="text-gray-600">A deep dive into spiritual habits that sustain growth.</p>
+        </div>
+        <div class="p-6 border rounded-xl hover:shadow-md transition" data-aos="fade-up" data-aos-delay="100">
+          <h4 class="text-xl font-semibold mb-2">Turning Passion Into Profit</h4>
+          <p class="text-gray-600">A guide to building a digital brand with purpose.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to Home Button -->
+  <div class="text-center my-12" data-aos="fade-in">
+    <a href="index.html" class="inline-block px-6 py-3 bg-weblin text-white font-semibold rounded-full shadow hover:bg-green-700 transition duration-300">
+      ← Back to Home
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-weblin text-white py-8 mt-10">
+    <div class="container mx-auto px-4 text-center" data-aos="fade-in">
+      <h4 class="text-lg font-semibold mb-4">Follow us on social media</h4>
+      <div class="flex justify-center space-x-6 mb-4">
+        <a href="https://www.tiktok.com/@yourusername" target="_blank" class="hover:text-gray-200 transition">
+          <!-- TikTok Icon -->
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M9.5 3v14a3.5 3.5 0 1 1-3.5-3.5H7A2.5 2.5 0 1 0 9.5 16V6h3.5A5 5 0 0 0 18 1.5v3a2 2 0 0 1-2 2h-3v12.5A6.5 6.5 0 1 1 6 10H4.5a8 8 0 1 0 16 0V1.5h-3A5.5 5.5 0 0 1 12 7H9.5V3z"/>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/yourusername" target="_blank" class="hover:text-gray-200 transition">
+          <!-- Facebook Icon -->
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-3h2.5V9.5a3.5 3.5 0 0 1 3.8-3.9H17v3h-2c-.7 0-1.5.4-1.5 1.2V12H17l-.5 3H14v7A10 10 0 0 0 22 12z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/yourusername" target="_blank" class="hover:text-gray-200 transition">
+          <!-- Instagram Icon -->
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0-5C7.6 2 2 2 2 7.6v8.8C2 22.4 7.6 22 12 22s10 .4 10-5.6V7.6C22 2 16.4 2 12 2zm0 3a7 7 0 1 1 0 14 7 7 0 0 1 0-14zm6.5-1.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+          </svg>
+        </a>
+        <a href="https://www.twitter.com/yourusername" target="_blank" class="hover:text-gray-200 transition">
+          <!-- Twitter Icon -->
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M22.5 4.5c-.8.4-1.7.6-2.6.8a4.6 4.6 0 0 0 2-2.6 9.4 9.4 0 0 1-2.9 1.1 4.6 4.6 0 0 0-7.8 4.2 13 13 0 0 1-9.4-4.8 4.6 4.6 0 0 0 1.4 6.2 4.6 4.6 0 0 1-2.1-.6v.1a4.6 4.6 0 0 0 3.7 4.5 4.7 4.7 0 0 1-2.1.1 4.6 4.6 0 0 0 4.3 3.2A9.2 9.2 0 0 1 2 19a13 13 0 0 0 7 2c8.3 0 12.8-6.9 12.8-12.8v-.6a9 9 0 0 0 2.2-2.2z"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Official Website Link -->
+      <p class="mb-2">
+        Visit our official site: 
+        <a href="https://yourofficialwebsite.com" target="_blank" class="underline hover:text-gray-200 transition">
+          www.yourofficialwebsite.com
+        </a>
+      </p>
+
+      <p>© 2025 Weblin. All rights reserved.</p>
+      <p class="text-sm">Made with love and purpose 🌱</p>
+    </div>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      offset: 100,
+      once: true,
+    });
+  </script>
+</body>
+</html>

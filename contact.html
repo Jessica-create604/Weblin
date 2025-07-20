@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Weblin</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo"><span class="logo-web">Web</span><span class="logo-lin">lin</span></div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li>
+        <a href="#">Blog</a>
+        <div class="dropdown">
+          <a href="blogpage.html">Page</a>
+          <a href="https://weblin.blog" target="_blank">Website</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+     <h2 class="section-title" data-aos="fade-down">Let's Talk</h2>
+
+<p class="section-intro" data-aos="fade-up">All designs and works of Weblin can be seen on our social media platforms.</p>
+
+<div class="social-buttons" data-aos="zoom-in">
+  <a href="https://wa.link/4nzpbf" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+  <a href="https://instagram.com" class="social-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>
+  <a href="https://facebook.com" class="social-btn facebook"><i class="fab fa-facebook"></i> Facebook</a>
+</div>
+
+<form class="contact-form" action="https://formsubmit.co/jessicashuaibu007@gmail.com" method="POST" data-aos="fade-up" data-aos-delay="200">
+  <h3>Send Us a Special Request or Feedback</h3>
+
+  <!-- Optional hidden fields -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html"> <!-- change to your thank-you page -->
+
+  <!-- User Inputs -->
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" placeholder="Your Message..." rows="5" required></textarea>
+
+  <button type="submit" class="outline-button">Send Message →</button>
+</form>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/share/1Ckov9T5NL/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://wa.link/4nzpbf" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>&copy; 2025 Weblin. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
+
+  <script src="script/index.js"></script>
+</body>
+</html>

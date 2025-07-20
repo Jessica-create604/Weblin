@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore Weblin's web services – from custom design to SEO, eCommerce and more." />
+  <title>Our Services | Weblin</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@600&family=DM+Sans:ital,wght@1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<!-- AOS Animation CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar">
+  <div class="logo"><span class="logo-web">Web</span><span class="logo-lin">lin</span></div>
+  
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html" class="active">Services</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li>
+      <a href="#">Blog</a>
+      <div class="dropdown">
+        <a href="blogpage.html">Page</a>
+        <a href="https://weblin.blog" target="_blank">Website</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+<section class="services" id="services">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-right">
+      What We Do <span class="underline"></span>
+    </h2>
+    <p class="section-intro" data-aos="fade-up">
+      At Weblin, we provide everything your business needs to thrive online — fast, affordable, and professional.
+    </p>
+
+    <div class="services-grid">
+
+      <div class="service-card" data-aos="fade-up">
+        <i class="fas fa-desktop service-icon"></i>
+        <h3>Responsive Website Design</h3>
+        <p>We design beautiful websites that adapt perfectly to mobile, tablet, and desktop — giving users the best experience across all devices.</p>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-bullseye service-icon"></i>
+        <h3>Landing Pages</h3>
+        <p>Get high-converting pages for your campaigns and offers. Our pages are built to convert visitors into paying clients — quickly and effectively.</p>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-shopping-cart service-icon"></i>
+        <h3>Online Stores (E-Commerce)</h3>
+        <p>We help you sell online with clean, modern store setups that support digital or physical products. Simple, smart, and easy to manage.</p>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+        <i class="fas fa-chart-line service-icon"></i>
+        <h3>SEO Optimization</h3>
+        <p>Your site will be optimized to rank on Google and reach more customers. More visibility means more sales — without paying for ads.</p>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+        <i class="fas fa-tools service-icon"></i>
+        <h3>Website Maintenance</h3>
+        <p>Stay worry-free with our support. We keep your site secure, updated, and running at full speed so you can focus on your business.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AOS Animation JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,  // animation speed in ms
+    once: true      // run only once
+  });
+</script>
+<script src="script/index.js"></script>
+</body>
+</html>
